@@ -10,7 +10,7 @@ import { useScrollDirection } from "@/hooks/use-scroll-direction";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-export function DynamicHeader() {
+const DynamicHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { scrollDirection, isAtTop } = useScrollDirection();
 
@@ -32,7 +32,7 @@ export function DynamicHeader() {
       >
         <div className="container mx-auto px-4 py-4 select-none">
           <div className="flex items-center justify-between">
-            
+
             <Link href="/" className="flex items-center space-x-2 group">
               <div>
                 <Image
@@ -196,3 +196,6 @@ function ScrollProgressBar() {
     </div>
   );
 }
+
+
+export default DynamicHeader

@@ -1,6 +1,6 @@
 import { Eye, Target } from "lucide-react"
 
-export const VisionMission = () => {
+const VisionMission = () => {
   return (
     <section className="py-12 md:py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white select-none">
       <div className="container mx-auto px-4">
@@ -30,3 +30,6 @@ export const VisionMission = () => {
     </section>
   )
 }
+
+
+export default VisionMission

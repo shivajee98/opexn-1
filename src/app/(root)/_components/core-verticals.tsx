@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Globe, TrendingUp, GraduationCap, ShoppingCart } from "lucide-react"
+import { deflate } from "zlib"
 
 const verticals = [
   {
@@ -41,7 +42,7 @@ const verticals = [
   },
 ]
 
-export function CoreVerticals() {
+const CoreVerticals = () =>  {
   return (
     <section id="verticals" className="py-12 md:py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 select-none">
       <div className="container mx-auto px-4">
@@ -84,3 +85,6 @@ export function CoreVerticals() {
     </section>
   )
 }
+
+
+export default CoreVerticals

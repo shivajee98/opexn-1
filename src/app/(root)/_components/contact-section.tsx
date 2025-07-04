@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Mail, Phone } from "lucide-react"
 
-export function ContactSection() {
+const ContactSection = () => {
   return (
     <section id="contact" className="py-12 md:py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -34,3 +34,6 @@ export function ContactSection() {
     </section>
   )
 }
+
+
+export default ContactSection
