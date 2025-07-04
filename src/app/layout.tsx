@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Analytics } from "@vercel/analytics/next"
 
 // Optimized font loading with display swap for better performance
 const geistSans = Geist({
@@ -189,6 +190,7 @@ export default function RootLayout({
         >
           <main className="overflow-x-hidden bg-background text-foreground min-h-screen">
             {children}
+            <Analytics />
           </main>
         </body>
       </html>
