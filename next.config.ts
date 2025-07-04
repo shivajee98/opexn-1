@@ -1,11 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-
     // Performance optimizations
   experimental: {
     optimizeCss: true,
-    optimizePackageImports: ['lucide-react', '@clerk/nextjs'],
+    optimizePackageImports: [
+      'react-icons',
+      '@heroicons/react',
+      'lucide-react',
+      '@clerk/nextjs'
+    ],
   },
 
   // Image optimization

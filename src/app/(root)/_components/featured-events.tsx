@@ -5,7 +5,7 @@ import { Calendar, MapPin, CheckCircle, Clock, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
-export function FeaturedEvents() {
+const FeaturedEvents = () => {
   return (
     <section id="events" className="py-10 md:py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50 select-none">
       <div className="container mx-auto px-4">
@@ -193,3 +193,6 @@ export function FeaturedEvents() {
     </section>
   )
 }
+
+
+export default FeaturedEvents

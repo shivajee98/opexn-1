@@ -17,6 +17,7 @@ import { useAutoplay } from "./embla-carousel-autoplay";
 import { useAutoplayProgress } from "./embla-carousel-autoplay-progress";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
+import { LazyImage } from "../lazy-image";
 
 type PropType = {
   slides: {
@@ -219,14 +220,12 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                   </div>
                   <div className="embla__parallax rounded-lg">
                     <div className={clsx("embla__parallax__layer relative")}>
-                      <Image
+                      <LazyImage
                         className="embla__slide__img embla__parallax__img"
                         src={item.src}
                         alt={item.heading}
                         width={1200}
                         height={800}
-                        style={{ objectFit: "cover" }}
-                        fetchPriority="high"
                       />
 
                       <div className="absolute w-full h-full top-0 left-0 transition duration-500 group-hover/card:bg-black opacity-30"></div>
